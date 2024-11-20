@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title "Recettes : "  ~ slug %}
+
+{% block body %}
+ 
+    {{slug | raw }}  
+     
+     {# This will be a comment
+     Recupere via un tableau
+     {{ person.firstname ~  person.lastname }}
+     
+    #}
+
+    {# Filter twig ex
+    //upper
+    {{slug | upper}} 
+    // afficher element HTML 
+    {{slug | raw }}
+    // pour les echapement
+    |e mais aveec symfony auto echapement
+     
+    #}
+
+
+ 
+{% endblock %}
